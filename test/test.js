@@ -1,12 +1,9 @@
 const assert = require('chai').assert;
 const index = require('../index')
-const a = require('../index').a
+const axios = require('axios')
 
 describe('index', function(){
-    it('a should return 10', function(){
-        assert.equal(a, 10)
-    })
-
+    
     it('1 + 1 should return 2', function(){
         assert.equal(require('../index').addNumbers(1, 1), 2)
     })
@@ -62,4 +59,12 @@ describe('index', function(){
     it('Sum 9+9 should return 18', function(){
         assert.equal(require('../soma').sum(9,9), 18)
     })
+
+    it('Google html should contain the body tag', async function(){
+        axios.get('http://www.google.com').then(resp => {
+            assert.match(resp.data, /(<body)/)
+            done()
+        })
+    })
+
 })

@@ -1,4 +1,4 @@
-var a = 10
+
 var array1 = [1,2,3,4,5]
 var array2 = [6,7,8,9]
 var obj = {attr1: 13}
@@ -8,7 +8,6 @@ var phrase2 = "Investtools cuida melhor dos seus estagiários que a bloomberg"
 var phrase3 = "Somos parte do Programa de Formação da Investtools"
 
 module.exports = {
-    a,
     array1,
     array2,
     obj,
