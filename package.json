@@ -1,0 +1,25 @@
+{
+  "name": "testes-nodejs-git",
+  "version": "1.0.0",
+  "description": "Node JS Tests - (Programa de formação)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murilo-Luciano/NodeJS-TDD.git"
+  },
+  "author": "Murilo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Murilo-Luciano/NodeJS-TDD/issues"
+  },
+  "homepage": "https://github.com/Murilo-Luciano/NodeJS-TDD#readme",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "nock": "^13.0.11"
+  }
+}
